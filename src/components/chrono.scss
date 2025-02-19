@@ -1,0 +1,67 @@
+.container-chrono{
+    min-width: 300px;
+    min-height: 300px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .config{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        .btn-moins{
+            padding: 0 1rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+        .btn-plus{
+            padding: 0 1rem;
+            margin-left: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}
+h1{
+    text-align: center;
+}
+.controls{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+    button{
+        width: 40%;
+        border: 1px solid;
+        padding: 0.5rem;
+        cursor: pointer;
+        outline: none;
+        color: white;
+    }
+    .play{
+        background: rgb(127, 125, 224);
+        &:hover{
+        background: rgb(35, 34, 136);
+
+        }
+    }
+    
+    .reset{
+        background: rgb(182, 5, 5);
+        &:hover{
+        background: rgb(117, 3, 3);
+        }
+    }
+}
+.anime{
+    animation: flash 1s infinite alternate;
+}
+@keyframes flash{
+    from{
+        box-shadow: 0 0 10px 0 #e5fbc5;
+    }to{
+        box-shadow: 0 0 15px 5px #99110a;
+    }
+}
